@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 67</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #site {
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#d9c7b3] text-black">
+
+    <div id="site" class="min-h-screen bg-[#d9c7b3] text-black">
+
+        <header class="mx-auto flex max-w-[850px] items-center justify-between gap-4 px-5 py-4">
+            <h2 class="text-lg font-extrabold tracking-wide">LOGO</h2>
+
+            <nav class="flex items-center gap-3 sm:gap-6">
+                <div class="hidden items-center gap-6 text-[10px] sm:flex">
+                    <a href="#" class="hover:opacity-60">Home</a>
+                    <a href="#" class="hover:opacity-60">About us</a>
+                    <a href="#" class="hover:opacity-60">Portfolio</a>
+                </div>
+
+                <button onclick="changeMode('light')"
+                    class="rounded-lg bg-orange-400 px-3 py-2 text-[10px] font-semibold shadow hover:bg-orange-500">
+                    LightMode
+                </button>
+
+                <button onclick="changeMode('dark')"
+                    class="rounded-lg bg-black px-3 py-2 text-[10px] font-semibold text-white shadow hover:bg-gray-800">
+                    DarkMode
+                </button>
+            </nav>
+        </header>
+
+        <main class="mx-auto flex min-h-[calc(100vh-65px)] max-w-[850px] items-center px-5 py-12">
+
+            <div class="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
+
+                <div>
+                    <h1 class="text-3xl font-extrabold leading-[1.05] sm:text-4xl">
+                        Work that we produce<br>
+                        for our clients
+                    </h1>
+
+                    <p class="mt-4 max-w-[360px] text-[10px] leading-[1.8] opacity-75">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard.
+                    </p>
+
+                    <button
+                        class="mt-5 rounded-lg bg-orange-400 px-4 py-2.5 text-[10px] font-semibold shadow-md hover:bg-orange-500">
+                        Get more details
+                    </button>
+                </div>
+
+                <img
+                    src="./Rectangle 24.png"
+                    alt="Ночной город"
+                    class="h-[250px] w-full rounded-xl object-cover shadow-xl sm:h-[300px]"
+                >
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="./main.js"></script>
+
+
+</body>
+</html>
